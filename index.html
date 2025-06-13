@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prevención de Drogas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #1e88e5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 6rem 1rem 3rem;
+      text-align: center;
+      margin-top: 64px;
+    }
+
+    header h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2, h3 {
+      color: #2c3e50;
+      margin-top: 2rem;
+      position: relative;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.7rem;
+      color: #2c3e50;
+    }
+
+    ul li::before {
+      content: '🔹';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1rem;
+      color: #1e88e5;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .quote {
+      background-color: #e3eafc;
+      border-left: 6px solid #1a73e8;
+      padding: 1.2rem 1.5rem;
+      font-style: italic;
+      color: #333;
+      margin: 2rem 0;
+    }
+
+    .footer {
+      background-color: #e8ecf1;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 2rem;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      header h2 {
+        font-size: 1.8rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Drogas</h1>
+    <ul>
+      <li><a href="#que">¿Qué son?</a></li>
+      <li><a href="#tipos">Tipos</a></li>
+      <li><a href="#causas">Causas</a></li>
+      <li><a href="#consecuencias">Consecuencias</a></li>
+      <li><a href="#prevencion">Prevención</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2 data-aos="fade-down">Prevención del Consumo de Drogas</h2>
+  </header>
+
+  <section>
+    <h2 id="que" data-aos="fade-right">¿Qué son las drogas?</h2>
+    <p data-aos="fade-up">Las drogas son sustancias químicas que modifican el funcionamiento del sistema nervioso central. Dependiendo del tipo y la dosis, pueden alterar la percepción, el estado de ánimo y la salud.</p>
+    <p class="quote" data-aos="fade-left">⚠️ Aunque algunas tienen usos médicos, su consumo no regulado puede generar dependencia, deterioro cognitivo y consecuencias sociales graves.</p>
+    <img src="drogas.jpg" alt="Imagen ilustrativa sobre drogas" data-aos="zoom-in" />
+
+    <h2 id="tipos" data-aos="fade-right">Tipos de drogas y sus efectos</h2>
+
+    <h3 data-aos="fade-up">1. Depresoras</h3>
+    <p data-aos="fade-up">Reducen la actividad cerebral y provocan relajación.</p>
+    <ul data-aos="fade-left">
+      <li>Alcohol</li>
+      <li>Opioides</li>
+      <li>Benzodiacepinas</li>
+      <li>Cannabis</li>
+    </ul>
+
+    <h3 data-aos="fade-up">2. Estimulantes</h3>
+    <p data-aos="fade-up">Aumentan la actividad cerebral y la energía.</p>
+    <ul data-aos="fade-left">
+      <li>Cocaína</li>
+      <li>Metanfetaminas</li>
+      <li>Nicotina</li>
+    </ul>
+
+    <h3 data-aos="fade-up">3. Alucinógenas</h3>
+    <p data-aos="fade-up">Alteran la percepción de la realidad.</p>
+    <ul data-aos="fade-left">
+      <li>LSD</li>
+      <li>Mescalina</li>
+    </ul>
+
+    <h3 data-aos="fade-up">4. Sintéticas</h3>
+    <p data-aos="fade-up">Imitaciones químicas de drogas naturales.</p>
+    <ul data-aos="fade-left">
+      <li>Cannabinoides sintéticos</li>
+    </ul>
+    <img src="Tipos.jpg" alt="Tipos de drogas" data-aos="zoom-in" />
+
+    <h2 id="causas" data-aos="fade-right">Causas del consumo</h2>
+    <ul data-aos="fade-left">
+      <li><strong>Genética:</strong> Predisposición hereditaria.</li>
+      <li><strong>Entorno social:</strong> Presión grupal o falta de apoyo.</li>
+      <li><strong>Psicológico:</strong> Ansiedad o trauma.</li>
+      <li><strong>Desinformación:</strong> Subestimación de los riesgos.</li>
+    </ul>
+    <img src="Cau.jpg" alt="Causas del consumo de drogas" data-aos="zoom-in" />
+
+    <h2 id="consecuencias" data-aos="fade-right">Consecuencias</h2>
+    <h3 data-aos="fade-up">En la salud</h3>
+    <ul data-aos="fade-left">
+      <li>Daños en órganos vitales</li>
+      <li>Trastornos mentales</li>
+      <li>Riesgo de sobredosis</li>
+    </ul>
+
+    <h3 data-aos="fade-up">En la vida social</h3>
+    <ul data-aos="fade-left">
+      <li>Conflictos familiares o laborales</li>
+      <li>Aislamiento social</li>
+      <li>Problemas legales</li>
+    </ul>
+    <img src="Conse.jpg" alt="Consecuencias" data-aos="zoom-in" />
+
+    <h2 id="prevencion" data-aos="fade-right">Prevención</h2>
+    <p data-aos="fade-up">La prevención es responsabilidad de todos. Algunas estrategias incluyen:</p>
+    <ul data-aos="fade-left">
+      <li><strong>Educación temprana:</strong> desde la infancia, fomentar hábitos saludables.</li>
+      <li><strong>Espacios de diálogo:</strong> en la familia, escuelas y comunidad.</li>
+      <li><strong>Apoyo psicológico:</strong> acceso a terapias y acompañamiento emocional.</li>
+      <li><strong>Campañas informativas:</strong> basadas en evidencia científica.</li>
+      <li><strong>Promoción del deporte y el arte:</strong> como alternativas de expresión y ocupación.</li>
+      <li><strong>Redes de contención:</strong> construir entornos donde los jóvenes se sientan escuchados.</li>
+    </ul>
+    <p class="quote" data-aos="fade-up">✨ Hablar de drogas no promueve su uso. <strong>Educar salva vidas.</strong></p>
+  </section>
+<h2 id="riesgos" data-aos="fade-right">Factores de riesgo y protección</h2>
+<p data-aos="fade-up">Comprender los factores que influyen en el consumo de drogas ayuda a prevenirlo de forma más efectiva.</p>
+<div data-aos="fade-left">
+  <h3>🛑 Factores de riesgo</h3>
+  <ul>
+    <li>Ambientes familiares conflictivos</li>
+    <li>Falta de supervisión parental</li>
+    <li>Baja autoestima</li>
+    <li>Disponibilidad de drogas</li>
+  </ul>
+  <h3>🛡️ Factores de protección</h3>
+  <ul>
+    <li>Comunicación abierta en el hogar</li>
+    <li>Participación en actividades deportivas o artísticas</li>
+    <li>Educación en habilidades para la vida</li>
+    <li>Redes de apoyo escolar y comunitario</li>
+  </ul>
+</div>
+ 
+<h2 id="recomendaciones" data-aos="fade-right">Consejos para jóvenes</h2>
+<p data-aos="fade-up">Si eres adolescente o joven, ten en cuenta estas recomendaciones:</p>
+<ul data-aos="fade-left">
+  <li>Rodéate de personas que respeten tus decisiones</li>
+  <li>Infórmate sobre los efectos reales de las drogas</li>
+  <li>No temas pedir ayuda si lo necesitas</li>
+  <li>Desarrolla tus talentos y fortalezas personales</li>
+</ul>
+<img src="juventud.jpg" alt="Consejos para jóvenes" data-aos="zoom-in" />
+
+<h2 id="estadisticas" data-aos="fade-right">Datos y cifras actuales</h2>
+<p data-aos="fade-up">La Organización Mundial de la Salud estima que más de <strong>35 millones de personas</strong> en el mundo padecen trastornos por consumo de drogas. En América Latina, el uso de sustancias ha aumentado en menores de 25 años en la última década.</p>
+<ul data-aos="fade-left">
+  <li>📈 El cannabis es la droga ilícita más consumida globalmente</li>
+  <li>📉 Solo 1 de cada 7 personas con trastornos de consumo recibe tratamiento</li>
+  <li>💡 La prevención efectiva puede reducir el riesgo en más del 30%</li>
+</ul>
+
+<h2 id="ayuda" data-aos="fade-right">¿Dónde buscar ayuda?</h2>
+<p data-aos="fade-up">Existen instituciones y profesionales capacitados para brindar apoyo. No estás solo.</p>
+<ul data-aos="fade-left">
+  <li><strong>Líneas de emergencia psicológica:</strong> disponibles 24/7</li>
+  <li><strong>Centros de salud mental comunitarios</strong></li>
+  <li><strong>ONGs y fundaciones de prevención y tratamiento</strong></li>
+  <li><strong>Orientación escolar y universitaria</strong></li>
+</ul>
+<p class="quote" data-aos="fade-up">📞 Pedir ayuda no es un signo de debilidad, es un paso valiente hacia el bienestar.</p>
+<nav>
+  <h1>Drogas</h1>
+  <ul>
+    <li><a href="#que">¿Qué son?</a></li>
+    <li><a href="#tipos">Tipos</a></li>
+    <li><a href="#causas">Causas</a></li>
+    <li><a href="#consecuencias">Consecuencias</a></li>
+    <li><a href="#prevencion">Prevención</a></li>
+    <li><a href="#riesgos">Riesgos</a></li>
+    <li><a href="#recomendaciones">Consejos</a></li>
+    <li><a href="#estadisticas">Datos</a></li>
+    <li><a href="#ayuda">Ayuda</a></li>
+  </ul>
+</nav>
+
+  <div class="footer">
+    © 2025 Campaña Educativa de Prevención del Consumo de Drogas
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
